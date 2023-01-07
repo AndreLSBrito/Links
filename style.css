@@ -33,6 +33,7 @@ body {
 
   /* background: color image repeat position/size; */
   background: var(--bgUrl) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -166,4 +167,16 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/*medua queries*/
+
+@media(min-width: 700px) {
+  :root{
+    --bgUrl: url(./assets/bg-desktop.jpg);
+  }
+  .light{
+     --bgUrl: url(./assets/bg-desktop-light.jpg);
+  }
+  /* so funciona com a meta viwport no documento html  */
 }
