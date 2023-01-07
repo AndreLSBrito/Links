@@ -84,13 +84,17 @@ body * {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  animation: slide-back 0.2s;
 
 }
 
 .light #switch button{
-  right: 0;
+  animation: slide-in 0.2s forwards;
   /* left: initial; */
+}
 
+#switch button:hover {
+  outline: 8px solid var(--highlightColor)
 }
 
 
@@ -179,4 +183,23 @@ footer {
      --bgUrl: url(./assets/bg-desktop-light.jpg);
   }
   /* so funciona com a meta viwport no documento html  */
+}
+
+/* animation */
+@keyframes slide-in{
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back{
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
