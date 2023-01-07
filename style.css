@@ -41,7 +41,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
   /* o "margin" e o" padding" trabalha todos os lados em direcao horario (top right bottom left), porem se colocar 1 argumento serve pra todos (top right bottom left), 2 argumentos (top-bottom) e (right left), 3 argumentos (top), (left -right) e (bottom).*/
