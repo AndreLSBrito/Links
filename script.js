@@ -7,7 +7,7 @@ function toggleMode() {
 
   if(html.classList.contains('light')){
     img.setAttribute(
-      'src', './assets/avatar-light.png'
+      'src', './assets/Avatar-light.png'
     );
     img.setAttribute(
       "alt",
